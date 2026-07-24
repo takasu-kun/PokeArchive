@@ -1,4 +1,4 @@
-# Pokédex
+# PokeArchive
 
 A modern, Pokémon-themed browser for every [PokeAPI](https://pokeapi.co) resource — Pokémon, moves, items, berries, locations, games, contests, encounters, evolutions and more — built with Vue 3 `<script setup>` SFCs and Vite.
 

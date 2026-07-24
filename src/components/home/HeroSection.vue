@@ -15,8 +15,8 @@ import { Icon } from '@iconify/vue'
         Every Pokémon. Every Move.<br class="hidden sm:block" /> Every Detail.
       </h1>
       <p class="max-w-xl text-balance text-white/85">
-        A complete Pokédex covering Pokémon, moves, items, berries, locations, games, contests, encounters,
-        evolutions and machines — all in one modern, searchable dex.
+        A complete PokeArchive covering Pokémon, moves, items, berries, locations, games, contests, encounters,
+        evolutions and machines — all in one modern, searchable archive.
       </p>
       <div class="flex flex-wrap items-center justify-center gap-3">
         <RouterLink
@@ -31,7 +31,7 @@ import { Icon } from '@iconify/vue'
           class="flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-2.5 font-semibold text-white backdrop-blur transition hover:bg-white/20"
         >
           <Icon icon="mdi:magnify" class="h-5 w-5" />
-          Search the Dex
+          Search the Archive
         </RouterLink>
       </div>
     </div>

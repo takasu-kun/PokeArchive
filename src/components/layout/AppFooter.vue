@@ -7,7 +7,7 @@ import { Icon } from '@iconify/vue'
     <div class="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4">
       <div class="flex items-center gap-2 font-display font-semibold text-slate-700 dark:text-slate-200">
         <Icon icon="mdi:pokeball" class="h-4 w-4 text-poke-red" />
-        Pokédex
+        PokeArchive
       </div>
       <p>
         Data from

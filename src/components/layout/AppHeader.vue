@@ -14,7 +14,7 @@ const ui = useUiStore()
         <span class="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-poke-red to-poke-red-dark shadow-sm">
           <Icon icon="mdi:pokeball" class="h-5 w-5 text-white" />
         </span>
-        <span class="font-display text-lg font-bold text-slate-800 dark:text-white">Pokédex</span>
+        <span class="font-display text-lg font-bold text-slate-800 dark:text-white">PokeArchive</span>
       </RouterLink>
 
       <AppNav class="flex-1 justify-center" />

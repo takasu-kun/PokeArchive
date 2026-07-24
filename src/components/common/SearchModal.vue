@@ -62,7 +62,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
           <div class="max-h-96 overflow-y-auto p-2">
             <p v-if="loading" class="px-3 py-6 text-center text-sm text-slate-400">Loading search index…</p>
             <p v-else-if="query && !hasResults" class="px-3 py-6 text-center text-sm text-slate-400">No matches for "{{ query }}"</p>
-            <p v-else-if="!query" class="px-3 py-6 text-center text-sm text-slate-400">Start typing to search across the entire Pokédex.</p>
+            <p v-else-if="!query" class="px-3 py-6 text-center text-sm text-slate-400">Start typing to search across the entire PokeArchive.</p>
 
             <div v-for="group in results" :key="group.entry.key" class="mb-2">
               <p class="px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-wide text-slate-400">{{ group.entry.pluralLabel }}</p>

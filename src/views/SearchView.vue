@@ -23,7 +23,7 @@ function goTo(entryKey, name) {
 
 <template>
   <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-    <h1 class="font-display text-2xl font-bold text-slate-800 dark:text-white">Search the Pokédex</h1>
+    <h1 class="font-display text-2xl font-bold text-slate-800 dark:text-white">Search the PokeArchive</h1>
     <div class="mt-4 flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm dark:border-slate-700 dark:bg-surface-dark-raised">
       <Icon icon="mdi:magnify" class="h-5 w-5 text-slate-400" />
       <input

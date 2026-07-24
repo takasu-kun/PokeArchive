@@ -6,7 +6,7 @@ import { resolveColorToken } from '@/utils/typeColors'
 
 <template>
   <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-    <h2 class="mb-6 font-display text-2xl font-bold text-slate-800 dark:text-white">Explore Every Corner of the Dex</h2>
+    <h2 class="mb-6 font-display text-2xl font-bold text-slate-800 dark:text-white">Explore Every Corner of the Archive</h2>
     <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
       <RouterLink
         v-for="cluster in CLUSTERS"
