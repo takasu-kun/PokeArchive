@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Pokemon brand palette */
+  --color-poke-red: #ee1515;
+  --color-poke-red-dark: #b71212;
+  --color-poke-blue: #2a75bb;
+  --color-poke-blue-dark: #3b4cca;
+  --color-poke-yellow: #ffcb05;
+  --color-poke-gold: #b3a125;
+
+  /* Surfaces */
+  --color-surface-light: #f7f7fa;
+  --color-surface-dark: #12141c;
+  --color-surface-light-raised: #ffffff;
+  --color-surface-dark-raised: #1b1e2a;
+
+  /* 18 elemental type colors */
+  --color-type-normal: #a8a878;
+  --color-type-fire: #f08030;
+  --color-type-water: #6890f0;
+  --color-type-electric: #f8d030;
+  --color-type-grass: #78c850;
+  --color-type-ice: #98d8d8;
+  --color-type-fighting: #c03028;
+  --color-type-poison: #a040a0;
+  --color-type-ground: #e0c068;
+  --color-type-flying: #a890f0;
+  --color-type-psychic: #f85888;
+  --color-type-bug: #a8b820;
+  --color-type-rock: #b8a038;
+  --color-type-ghost: #705898;
+  --color-type-dragon: #7038f8;
+  --color-type-dark: #705848;
+  --color-type-steel: #b8b8d0;
+  --color-type-fairy: #ee99ac;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface-light text-slate-800 antialiased;
+  @apply dark:bg-surface-dark dark:text-slate-100;
+  font-family: var(--font-sans);
+  margin: 0;
+  transition: background-color 0.2s ease;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+#app {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: var(--color-poke-yellow);
+  color: #12141c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-poke-red/40 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-poke-red/70;
+}

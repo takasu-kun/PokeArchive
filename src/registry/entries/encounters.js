@@ -1,0 +1,47 @@
+export const encounterEntries = [
+  {
+    key: 'encounter-method',
+    endpoint: 'encounter-method',
+    cluster: 'encounters',
+    label: 'Encounter Method',
+    pluralLabel: 'Encounter Methods',
+    icon: 'mdi:walk',
+    color: 'type-bug',
+    description: 'How a Pokémon encounter happens — walking, fishing, surfing and more.',
+    listFields: [{ key: 'name', label: 'Name', kind: 'text', showInList: true }],
+    detailFields: [
+      { key: 'order', label: 'Order', kind: 'number', showInDetail: true },
+      { key: 'names', label: 'Localized Name', kind: 'localized-name', showInDetail: true },
+    ],
+  },
+  {
+    key: 'encounter-condition',
+    endpoint: 'encounter-condition',
+    cluster: 'encounters',
+    label: 'Encounter Condition',
+    pluralLabel: 'Encounter Conditions',
+    icon: 'mdi:weather-partly-cloudy',
+    color: 'type-bug',
+    description: 'Conditions that affect whether an encounter can occur, like time of day.',
+    listFields: [{ key: 'name', label: 'Name', kind: 'text', showInList: true }],
+    detailFields: [
+      { key: 'names', label: 'Localized Name', kind: 'localized-name', showInDetail: true },
+      { key: 'values', label: 'Possible Values', kind: 'link-list', linkResourceType: 'encounter-condition-value', showInDetail: true },
+    ],
+  },
+  {
+    key: 'encounter-condition-value',
+    endpoint: 'encounter-condition-value',
+    cluster: 'encounters',
+    label: 'Encounter Condition Value',
+    pluralLabel: 'Encounter Condition Values',
+    icon: 'mdi:weather-night',
+    color: 'type-bug',
+    description: 'A specific value for an encounter condition, e.g. "morning" or "swarm".',
+    listFields: [{ key: 'name', label: 'Name', kind: 'text', showInList: true }],
+    detailFields: [
+      { key: 'condition', label: 'Condition', kind: 'link', linkResourceType: 'encounter-condition', showInDetail: true },
+      { key: 'names', label: 'Localized Name', kind: 'localized-name', showInDetail: true },
+    ],
+  },
+]
